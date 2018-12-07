@@ -4,6 +4,19 @@
     {
         private object data;
         private LinkedListNode next;
+        private LinkedListNode prev;
+
+        public LinkedListNode Prev
+        {
+            get
+            {
+                return prev;
+            }
+            set
+            {
+                prev = value;
+            }
+        }
 
         public LinkedListNode Next
         {
