@@ -66,6 +66,7 @@ namespace Adt
                 temp.Next = n;
                 Count++;
             }
+            //Min egen kode
             //switch (index)
             //{
             //    case 0:
@@ -118,6 +119,7 @@ namespace Adt
                 Count--;
             }
 
+            //Min Egen kode
             //switch (index)
             //{
             //    case 0:
@@ -203,6 +205,20 @@ namespace Adt
 
         public void Swap(int index)
         {
+            if (index >= Count)
+            {
+                Console.WriteLine("Ingen at swappe med");
+            }
+            else
+            {
+                LinkedListNode temp = Head;
+                for (int i = 0; i < index; i++)
+                {
+                    temp = temp.Next;
+                }
+                LinkedListNode temp2 = temp.Next;
+                
+            }
 
         }
 
